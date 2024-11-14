@@ -1,61 +1,59 @@
-English| [简体中文](./NodeHub项目创建指南_cn.md)
+[English](./NodeHub项目创建指南_en.md) | 简体中文
 
-# NodeHub Project Creation Guide
+# NodeHub项目创建指南
 
-## Introduction to NodeHub
-NodeHub is an intelligent robot application center designed for robot enthusiasts. It aims to assist robot enthusiasts in developing their own intelligent robots in a simpler, more efficient, and open manner.
+## NodeHub简介
+NodeHub智能机器人应用中心，为机器人爱好者打造的智能机器人应用中心,旨在以更加简单、高效、开放的方式协助机器人爱好者开发自己的智能机器人。
 
-## How to Access NodeHub?
-1. Open your browser and visit the following URL: https://developer.d-robotics.cc/nodehub  
-2. In the DiGua Developer Community, click the NodeHub tab at the top to navigate to NodeHub.
+## 如何访问NodeHub？
+1. 打开浏览器，访问以下网址：https://developer.d-robotics.cc/nodehub  
+2. 在地瓜开发者社区的任何位置，点击上方的NodeHub栏目即可跳转到NodeHub.
 ![图片](images_2.0/1.jpg)
-3. Scroll down the NodeHub page to view the related robot nodes. Click on a tag to enter the detail page of that node.
+3. NodeHub页面向下滑动即可看到相关的机器人Node，点击标签，即可进入这个Node的详情页了。
 ![图片](images_2.0/2.jpg)
 
-## Create and Publish a Node
-1. Enter the DiGua Developer Community NodeHub interface, scroll down, and click the "Create Project" button.
-  ![图片](images_2.0/3.jpg)
+## 创建并发布一个Node
+1. 进入地瓜开发者社区NodeHub界面，向下滑动，点击创建项目按钮
+![图片](images_2.0/3.jpg)
+2. 填写相关的信息，填写完成后，点击“下一步”按钮。每个填写项目的说明如下：
+![图片](images_2.0/4.jpg)
+（1）项目名称：为您的Node取一个名字，这个名字不能与NodeHub中的任何一个项目的名称重复。如果填入了重复的名称，点击下一步时就会提示项目名称重复了。有时候已经确认了项目名称没有重复，还是提示重复了，可能是因为项目已经被重复创建，您可以选择停止此次创建，或者删除之前创建的项目。
+（2）项目简介：填写一段Node的简介，这段内容会在项目成功发布后，当别人的鼠标移动到您的项目图标上后，就会显示这段项目的简介文字。
+![图片](images_2.0/5.jpg)
+（3）项目分类：为您的Node选择一个分类，这个分类是NodeHub的页面的分类。注意，这个分类可以多选哦~
+![图片](images_2.0/6.jpg)
+![图片](images_2.0/7.jpg)
 
-2. Fill in the relevant information, and once completed, click the "Next" button. Below are the instructions for each field:
-  ![图片](images_2.0/4.jpg)(1) **Project Name**: Choose a name for your Node. The name must not be the same as any existing project on NodeHub. If you enter a duplicate name, the system will notify you when you click "Next." Sometimes, even if you believe the name is unique, the system might still flag it as a duplicate. This could be due to the project having been created more than once. You can choose to stop the current creation or delete the previously created project.
+（4）代码仓库：填写您的代码仓库地址。代码仓库需要有以下文件：
+- 中文README_cn.md，中文的地瓜开发者社区NodeHub会抓取这个文件作为NodeHub的页面内容。
+- 英文README.MD，英文的地瓜开发者社区NodeHub会抓取这个文件作为NodeHub的页面内容。
+![图片](images_2.0/8.jpg)
 
-  (2) **Project Description**: Provide a brief description of the Node. This content will be displayed when someone hovers over your project icon after it has been successfully published.![图片](images_2.0/5.jpg)
-  (3) **Project Category**: Choose a category for your Node. This category will be used to classify the project on the NodeHub page. Note that you can select multiple categories if applicable.
-  ![图片](images_2.0/6.jpg)
-  ![图片](images_2.0/7.jpg)
+（5）运行平台：为您的Node选择一个运行平台的分类，这个分类是NodeHub的页面的分类。注意，这个分类也可以多选哦~
+![图片](images_2.0/9.jpg)
+![图片](images_2.0/10.jpg)
 
-  （4）**Code Repository**: Enter the URL of your code repository. The repository must contain the following files:
+（6）封面图片：第①步，点击“封面图片”的“上传banner”按钮；第②步，在弹出的文件资源管理器选择您的图片路径;第③步，选择您的图片；第④步，点击“打开”或者“Open”按钮。点击后，选择的界面会消失，等待一小会，图片上传成功，就会显示在“封面图片”的地方。这个图片会在项目成功发布后，作为项目的展示图片。
+![图片](images_2.0/11.jpg)
+![图片](images_2.0/12.jpg)
 
-- **README_cn.md** (in Chinese): The DiGua Developer Community NodeHub will fetch this file as the content for the NodeHub page in Chinese.
+（7）视频链接：目前支持Bilibili的视频链接，可以在Bilibili发布您的视频后，通过以下方式获取。点击Bilibili视频下方的“点击复制链接”的按钮，然后点击“嵌入代码”按钮，即可将这个视频的嵌入链接复制到剪切板，复制进NodeHub的“视频链接”信息框中。
+![图片](images_2.0/13.jpg)
 
-- **README.md** (in English): The DiGua Developer Community NodeHub will fetch this file as the content for the NodeHub page in English.
-  ![图片](images_2.0/8.jpg)
-
-  （5）**Operating Platform**: Choose a category for the operating platform of your Node. This category will be used to classify the project on the NodeHub page. Note that you can select multiple categories if applicable.
-  ![图片](images_2.0/9.jpg)
-  ![图片](images_2.0/10.jpg)
-
-  （6）**Cover Image**: Step 1: Click the "Upload Banner" button under "Cover Image." Step 2: In the pop-up file explorer, select the path to your image. Step 3: Choose your image. Step 4: Click the "Open" button. After clicking, the selection window will close. Wait a moment, and once the image is successfully uploaded, it will appear in the "Cover Image" section. This image will be displayed as the project showcase image after the project is successfully published.![图片](images_2.0/11.jpg)
-  ![图片](images_2.0/12.jpg)
-
-  （7）**Video Link**: Currently, NodeHub supports Bilibili video links. After publishing your video on Bilibili, you can obtain the link by clicking the "Copy Link" button below the video. Then, click the "Embed Code" button to copy the embed link to your clipboard. Finally, paste this link into the "Video Link" input field on NodeHub.
-  ![图片](images_2.0/13.jpg)
-
-3. Wait for NodeHub to fetch the README files from the GitHub repository. Once the fetch is complete, the message "Fetch Successful" will be displayed.
+3. 等待NodeHub从Github仓库拉取README文件，拉取后，会显示“拉取成功”。
 ![图片](images_2.0/14.jpg)
 ![图片](images_2.0/15.jpg)
-4. Click "Accept Apache 2.0 License Agreement," then click the "Publish" button.
+4. 点击“接受Apache2.0 license 协议”，点击“发布”按钮。
 ![图片](images_2.0/16.jpg)
-5. Once published successfully, you can find your Node on the NodeHub homepage.
+5. 发布成功，您可以在NodeHub主页找到您发布的Node。
 ![图片](images_2.0/17.jpg)
 
 
 
-## Common Issue Troubleshooting
-1. **Error after clicking "Next": "Failed to fetch NodeHub project GitLab repository files."**
-You need to check whether the code repository URL is correct, and then click the "Next" button again.![图片](images_2.0/20.jpg)
-
-2. **After clicking the "Publish" button, if you see the message "Project addition failed,"** 
-
-  It might be due to network fluctuations or other reasons. In most cases, the project has been successfully uploaded. You can go back to the NodeHub homepage or your personal center to find the Node you just published.
-  ![图片](images_2.0/21.jpg)
+## 常见异常排查
+1. 点击“下一步”后，显示：抓取NodeHub项目Gitlab仓库文件失败。
+您需要检查代码仓库的地址是否正确，然后重新点击“下一步”按钮。
+![图片](images_2.0/20.jpg)
+2. 点击“发布”按钮后，显示：项目添加失败。
+可能是因为网络波动等原因，实际上已经成功上传，您可以回到NodeHub主页或者个人中心找到自己发布的Node。
+![图片](images_2.0/21.jpg)
