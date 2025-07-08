@@ -1,29 +1,7 @@
-English| [简体中文](./README_cn.md)
+This design takes the RDK X5 embedded platform as the core main controller, fully leveraging the heterogeneous computing advantages of its dedicated BPU. The system runs on the highly optimized TROS robot operating system, achieving performance breakthroughs through the triple collaborative optimization of model architecture reconstruction, training strategy innovation, and BPU instruction set-level acceleration.
 
-# docs
+At the visual perception layer, an innovative lightweight YOLOv11-EfficientViT fusion model is deployed. In-depth operator adaptation and computational graph optimization are carried out for the hardware characteristics of the BPU, significantly improving inference efficiency. Combined with an adaptive multi-scale feature focusing mechanism, it effectively enhances the ability to detect traffic violations in scenarios with complex lighting and occlusion.
 
-This section contains documentation for the project. Let's take a look at some of the key points:
+The control layer is based on a deeply customized ROS2 Humble framework, constructing a low-latency communication middleware and a real-time task scheduler. Relying on the computing resource hardware isolation feature of RDK, it ensures that the motion control cycle is stable within the millisecond-level response range. By integrating the Cartographer laser SLAM algorithm and the Navigation2 navigation stack, it realizes real-time positioning with centimeter-level precision and dynamic obstacle avoidance, greatly improving the inspection robustness in complex environments.
 
-1. **Functionality Description**  
-   The functionality of the project includes but is not limited to:
-   - User registration and login
-   - Posting articles and comments
-   - Viewing articles from other users
-   - Managing personal profiles
-
-2. **Technical Requirements**  
-   To run the project smoothly, you need to have the following technical requirements:
-   - Proficiency in the Python programming language
-   - Familiarity with the Django framework
-   - Knowledge of frontend development technologies such as HTML, CSS, and JavaScript
-
-3. **Installation Guide**  
-   To run the project locally, you can follow these installation steps:
-   ```
-   $ git clone https://github.com/project.git
-   $ cd project
-   $ python manage.py runserver
-   ```
-   Visit `http://localhost:8000` to see the project running.
-
-Feel free to explore the rest of the documentation for more detailed information.
+The system uniformly schedules the computing loads of visual detection, SLAM mapping, and decision-making through the BPU. Moreover, the YOLOv11-EfficientViT model is quantized and deployed on the RDK X5 based on the D-Robotics algorithm toolchain, and the instruction-level pipeline collaboration between the BPU and real-time positioning computation is realized. On the premise of maintaining ultra-low system power consumption, it achieves a tight coupling of high-precision target recognition, strong real-time motion control, and intelligent decision-making, providing a highly reliable embedded edge intelligence solution that can be quickly deployed for smart cities.
